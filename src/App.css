@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "BrightlyCrushRegular";
+  src: url("./assets/BrightlyCrush.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+
+  font-family: "BrightlyCrushRegular", sans-serif;
+  color: #ffffff;
+
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #007ced;
+  background: linear-gradient(to bottom, #007ced 1%, #cce7ff 100%);
+
+}
+
+.header {
+  background-color: #aac4fc;
+  width: 100;
+  height: 10vh;
+
+  button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #ffffff;
+
+    transition-property: color;
+    transition-duration: 0.5s;
+  }
+
+  button:hover {
+    color: #00bbf0
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  a {
+    color: #ffffff;
+
+    transition-property: color;
+    transition-duration: 0.5s;
+  }
+
+  a:hover {
+    color: #00bbf0
+  }
+
+  ul {
+    display: flex;
+    margin-top: 0;
+    height: 10vh;
+
+    li {
+      margin: auto;
+      list-style-type: none;
+
+      h1 {
+        margin: 0;
+
+      }
+
+    }
+  }
+}
+
+
+.mint-card {
+  margin: 10vh 15vw;
+  height: 68vh;
+  background: linear-gradient(0.25turn, #d1c3fc, #9bc4fc);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 1vh;
+
+  button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #ffffff;
+
+    transition-property: color;
+    transition-duration: 0.5s;
+  }
+
+  
+
+  button:hover {
+    color: #00bbf0
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+
+}
+
+.collection-card {
+  margin: 10vh 15vw;
+  height: 68vh;
+  background: linear-gradient(0.25turn, #d1c3fc, #9bc4fc);
+  border-radius: 10px;
+  padding: 1vh;
+}
+
+#cloud-intro {
+  height: 100vh;
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0 200px,
+    url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
+    url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px 250px;
+  animation: wind 20s linear infinite;
+
+}
+
+@keyframes wind {
+  0% {
+    background-position: 0 200px, 0 300px, 100px 250px;
+  }
+
+  100% {
+    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+  }
+}
+
+#balance {
+  float: right;
+}
+
+span {
+  font-size: xx-large;
+}
+
+.price {
+  color: #535353;
+}
+
+.mint-section {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.loadingBar {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #f5ede7;
+  border: solid 2px #a578ae;
+
+  div {
+    height: 22px;
+    border-radius: 11px;
+    background-color: #a578ae;
+    position: relative;
+    top: 4px;
+    left: 5px;
+  }
+}
+
+.mintCount {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.connectNavItem {
+  width: 15vw;
+  overflow: hidden;
+}
